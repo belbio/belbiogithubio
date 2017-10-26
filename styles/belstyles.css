@@ -1,0 +1,160 @@
+.avatar-frame,
+.avatar-frame img {
+    width: 50px;
+    height: 50px;
+    border-radius: 80%;
+}
+
+.li-nobullets {
+    list-style-type: none;
+}
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Lato', 'Helvetica Neue', sans-serif;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: 300;
+    font-family: 'Open Sans', 'Helvetica Neue' sans-serif;
+    text-transform: uppercase;
+}
+
+.conversational {
+    text-transform: none;
+}
+
+a {
+    color: #0C91A5;
+}
+
+a:hover,
+a:focus {
+    color: #0C91A5;
+    text-decoration: none;
+    border-bottom: 2px dotted #FDC975;
+    text-shadow: 0px 0px 0px #0C91A5;
+}
+
+button:focus,
+button:focus>i,
+button:hover,
+button:hover>i {
+    color: #0C91A5;
+}
+
+.body-html {
+    min-height: calc(100vh - 160px) !important;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+.navbar-brand {
+    border-bottom: none !important;
+    height: inherit;
+}
+
+.navbar-logo {
+    width: 200px;
+/*    height: 80px;*/
+    top: -5px;
+}
+
+.navbar-header-title {
+    margin-top: -3px;
+    letter-spacing: -2px;
+    /*text-transform: uppercase;*/
+    font-size: 24px;
+    font-weight: 300;
+}
+
+footer {
+    height: 160px;
+    bottom: 0;
+    background-color: rgba(53, 53, 53, 1);
+    background-image: url("../media/footer_lodyas/footer_lodyas.png");
+}
+
+.footer-body {
+    padding-top: 25px;
+}
+
+.footerUl li {
+    list-style-type: none;
+}
+
+.footerUl li a {
+    color: #E4E5E7;
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/*MARGIN SHORTCUTS*/
+
+.marginlftrt0 {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.margintop10 {
+    margin-top: 10px;
+}
+
+.margintop20 {
+    margin-top: 20px;
+}
+
+.margintop30 {
+    margin-top: 30px;
+}
+.margintop40 {
+    margin-top: 40px;
+}
+
+.margintop60 {
+    margin-top: 60px;
+}
+
+.margintop80 {
+    margin-top: 80px;
+}
+
+.margintop90 {
+    margin-top: 90px;
+}
+
+.margintop120 {
+    margin-top: 120px;
+}
+
+.marginbtm10 {
+    margin-bottom: 10px;
+}
+
+.marginrt0 {
+    margin-right: 0px;
+}
+
+.marginrt10 {
+    margin-right: 10px;
+}
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>BEL.bio</title>
+    <script src="https://use.fontawesome.com/d0c4fd9c38.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js I am a IE8 support of HTML5 elements and media querie -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="styles/belstyles.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="media/favicon.png" />
+</head>
+
+<body>
+    <div class="body-html">
+        <!-- <div class="container-fluid"> -->
+        <div class="navbar navbar-default">
+            <div class="col-xs-12">
+                <a class="navbar-brand" href="#">
+                    <img class="navbar-logo" alt="bel-logo" src="media/logo.png">
+                    <span class="navbar-header-title">BEL.bio</span>
+                </a>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="row">
+                <!--                 <div class="col-xs-12 ">
+                    <h4>What is BEL?</h4>
+                    <p>BEL is a language for representing scientific findings in the life sciences in a computable form. BEL is designed to represent scientific findings by capturing causal and correlative relationships in context, where context can include information about the biological and experimental system in which the relationships were observed, the supporting publications cited and the process of curation.
+                    </p>
+                    <p>BEL is intended as a knowledge capture and interchange medium, supporting the operation of systems that integrate knowledge derived from independent efforts. The language is designed to be use-neutral, facilitating the storage and use of structured knowledge for inference by applications through a knowledge assembly process that can create computable biological networks. While BEL does not prescribe any particular assembly process or any particular knowledge format for the output of an assembly process, a suite of software components called the BEL Framework provides everything necessary to create, compile, assemble, and deliver computable knowledge models to BEL-aware applications.
+                    </p>
+                    <p>The current version of BEL provides the means to describe biological interactions qualitatively but not to quantify the magnitude or rate of these interactions. This limitation is by design because this quantitative information has significant variability and is not consistently reported in the literature. It is our hope that future versions of BEL can accommodate these additional data, and that <em>YOU are able to work together with the OpenBEL Consortium to make this happen.</em>
+                    </p>
+                </div> -->
+                <div class="col-xs-12 col-sm-6 marginbtm10">
+                    <h3>Language</h3>
+                    <p>The Biological Expression Language (BEL) is a language for representing scientific findings in the life sciences in a computable form. BEL is designed to represent scientific findings by capturing causal and correlative relationships in context, where context can include information about the biological and experimental system in which the relationships were observed, the supporting publications cited and the curation process used.</p>
+                    <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html" target="_blank">BEL Language 2.0</a> |
+                    <a href="http://openbel.org/language/" target="_blank">BEL Language Resources Directory</a>
+                    <h3>Communication Channels</h3>
+                    <ul>
+                        <li>
+                            <h5><em class="conversational">BEL Language Questions - how to capture biology in BEL</em>: <a href="http://biology.stackexchange.com/">StackExchange</a></h5>
+                            <p>StackExchange has the best Q&A system available with the ability to show multiple potential answers and allow users to vote on the best ones.</p>
+                        </li>
+                        <li>
+                            <h5><em class="conversational">Discussion</em>: <a href="https://groups.google.com/forum/#!forum/openbel-discuss">Google Groups</a></h5>
+                            <p>Google Groups is used for BEL discussions and troubleshooting help sponsored by OpenBEL.</p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- By profession -->
+                <div class="col-xs-12 col-sm-6" id="accordion" role="tablist" aria-multiselectable="true">
+                    <h3 class="conversational">Get started with BEL</h3>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+        						<a data-toggle="collapse" data-parent="#accordion" href="#profOne" aria-expanded="false" aria-controls="collapseOne">I am a Biologist
+        						<i class="fa fa-caret-down" aria-hidden="true"></i>
+        						</a>
+					      	</h4>
+                        </div>
+                        <div id="profOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                            <ul>
+                                <li>
+                                    <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html" target="_blank">BEL Language 2.0</a>
+                                </li>
+				<li>
+                                    <a href="http://openbel.org/language/version_1.0/bel_specification_version_1.0.html" target="_blank">BEL Language 1.0</a>
+                                </li>
+                                <li>
+                                    <a href="http://openbel.org/language/" target="_blank">BEL Language Resources Directory</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/OpenBEL/openbel-platform/blob/master/terminology.md" target="_blank">Terminology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+						        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#profTwo" aria-expanded="false" aria-controls="collapseTwo">I am a Computational Biologist
+						        <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+						    </h4>
+                        </div>
+                        <div id="profTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <ul>
+                                <li>
+                                    <a href="http://apidocs.bel.bio/" target="_blank">BEL.bio API Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html" target="_blank">BEL Language 2.0</a>
+                                </li>
+				<li>
+                                    <a href="http://openbel.org/language/version_1.0/bel_specification_version_1.0.html" target="_blank">BEL Language 1.0</a>
+                                </li>
+                                <li>
+                                    <a href="http://openbel.org/language/" target="_blank">BEL Language Resources Directory</a>
+                                </li>
+                                <li>
+                                    <a href="http://jsongraphformat.info/" target="_blank">JSON Graph Format (JGF)</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/OpenBEL/openbel-platform/blob/master/terminology.md" target="_blank">Terminology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!--     <footer>
+        <div class="container footer-body">
+            <div class="row">
+                <div class="col-xs-8 col-xs-offset-4 col-sm-4 col-sm-offset-8 col-md-3 col-md-offset-9">
+                    <ul class="footerUl">
+                        <!-- <li><a href="../welcome.html">Project Overview</a></li> -->
+                        <!-- <li><a href="../about.html">About</a></li> -->
+                  <!--       <li><a href="http://www.openbel.org/">OpenBEL.org</a></li>
+                        <li><a href="https://wiki.openbel.org/">OpenBEL Wiki Page</a></li>
+                        <li><a href="mailto: info@openbel.org">Contact</a></li> -->
+                        <!-- <li><a href="#">Additional Resources...</a></li> -->
+               <!--      </ul>
+                </div>
+            </div>
+        </div>
+    </footer>  -->
+    <!-- jQuery (necessary I am a Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajaxgoogleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>

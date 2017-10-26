@@ -1,0 +1,10 @@
+body {
+
+}
+.navbar-header-title {
+	text-transform: none;
+	color: #353535;
+}
+.fa-caret-down {
+	float: right;
+}
