@@ -41,9 +41,25 @@
                     <h4>What is BEL?</h4>
                     <p>BEL is a language for representing scientific findings in the life sciences in a computable form. BEL is designed to represent scientific findings by capturing causal and correlative relationships in context, where context can include information about the biological and experimental system in which the relationships were observed, the supporting publications cited and the process of curation.
                     </p>
-                    <p>BEL is intended as a knowledge capture and interchange medium, supporting the operation of systems that integrate knowledge derived from independent efforts. The language is designed to be use-neutral, facilitating the storage and use of structured knowledge for inference by applications through a knowledge assembly process that can create computable biological networks. While BEL does not prescribe any particular assembly process or any particular knowledge format for the output of an assembly process, a suite of software components called the BEL Framework provides everything necessary to create, compile, assemble, and deliver computable knowledge models to BEL-aware applications.
+                    <h4>Example scientific finding</h4>
+                    <p><i>Shear stress enhances expression of the gene encoding the endothelial nitric oxide synthase (eNOS) and further stimulates its enzymatic activity, leading to physiologic low concentrations of nitric oxide (NO) within endothelial cells [44–46]. This continuous generation of NO prevents the apoptosis of endothelial cells, thereby protecting the endothelial monolayer from injury [47,48].</i></p>
+                    <h5>is converted to BEL</h5>
+                    <ul>
+                        <li>biologicalProcess(GOBP:"response to fluid shear stress") increases rnaAbundance(HGNC:NOS3)</li>
+                        <li>biologicalProcess(GOBP:"response to fluid shear stress") increases activity(proteinAbundance(HGNC:NOS3), molecularActivity(default:cat))</li>
+                        <li>activity(proteinAbundance(HGNC:NOS3), molecularActivity(default:cat)) directlyIncreases abundance(CHEBI:"nitric oxide")</li>
+                        <li>abundance(CHEBI:"nitric oxide") decreases biologicalProcess(GOBP:"apoptotic process")</li>
+                    </ul>
+                    <h5>Last BEL assertion using short BEL formatting for easier notetaking</h5>
+                    <ul>
+                        <li>a(CHEBI:"nitric oxide") -| bp(GOBP:"apoptotic process")</li>
+                    </ul>
+
+                    <p>These statements can be assembled into a network with other findings captured in BEL filtered for specific context such as disease, tissue, organism, etc. You can convert BEL statements in one organism to another organism by orthologization since all of the BEL entities (e.g. HGNC:NOS3) are unambiguously defined. The <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html#_bel_examples">BEL Language documents</a> show many examples of how to capture biological findings in BEL.</p>
+
+                    <p>BEL is intended as a knowledge capture and interchange medium, supporting the operation of systems that integrate knowledge derived from independent efforts. The language is designed to be use-neutral, facilitating the storage and use of structured knowledge for inference by applications through a knowledge assembly process that creates computable biological knowledgebases. While BEL does not prescribe any particular assembly process or any particular knowledge format for the output of an assembly process, a suite of software components called the BEL.bio platform provides the tooling necessary to create and deliver computable knowledge to BEL-aware applications.
                     </p>
-                    <p>The current version of BEL provides the means to describe biological interactions qualitatively but not to quantify the magnitude or rate of these interactions. This limitation is by design because this quantitative information has significant variability and is not consistently reported in the literature. It is our hope that future versions of BEL can accommodate these additional data, and that <em>YOU are able to work together with the OpenBEL Consortium to make this happen.</em>
+                    <p>The current version of BEL provides the means to describe biological interactions qualitatively but not to quantify the magnitude or rate of these interactions. This limitation is by design because this quantitative information has significant variability and is not consistently reported in the literature. It is our hope that future versions of BEL can accommodate these additional data, and that <em>YOU are able to work together with the BEL Community to make this happen.</em>
                     </p>
                 </div>
             </div>
@@ -63,8 +79,7 @@
                         <p>Google Groups is used for BEL discussions and troubleshooting help sponsored by OpenBEL.</p>
                     </li>
                 </ul>
-            </div>
-            <div class="col-xs-12 col-sm-6 marginbtm10">
+
                 <h3><a href="credits.html">Sponsors and Credit Page</a></h3>
             </div>
 
@@ -84,14 +99,11 @@
                                 <li>
                                     <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html" target="_blank">BEL Language 2.0</a>
                                 </li>
-				<li>
-                                    <a href="http://openbel.org/language/version_1.0/bel_specification_version_1.0.html" target="_blank">BEL Language 1.0</a>
+                                <li>
+                                    <a href="http://openbel.org/language/" target="_blank">BEL Language Resources Directory including BEL 1.0</a>
                                 </li>
                                 <li>
-                                    <a href="http://openbel.org/language/" target="_blank">BEL Language Resources Directory</a>
-                                </li>
-                                <li>
-                                    <a href="https://github.com/OpenBEL/openbel-platform/blob/master/terminology.md" target="_blank">Terminology</a>
+                                    <a href="http://bel-api.readthedocs.io/en/latest/glossary.html" target="_blank">Terminology</a>
                                 </li>
                             </ul>
                         </div>
@@ -111,9 +123,6 @@
                                 <li>
                                     <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html" target="_blank">BEL Language 2.0</a>
                                 </li>
-				<li>
-                                    <a href="http://openbel.org/language/version_1.0/bel_specification_version_1.0.html" target="_blank">BEL Language 1.0</a>
-                                </li>
                                 <li>
                                     <a href="http://openbel.org/language/" target="_blank">BEL Language Resources Directory</a>
                                 </li>
@@ -121,7 +130,40 @@
                                     <a href="http://jsongraphformat.info/" target="_blank">JSON Graph Format (JGF)</a>
                                 </li>
                                 <li>
-                                    <a href="https://github.com/OpenBEL/openbel-platform/blob/master/terminology.md" target="_blank">Terminology</a>
+                                    <a href="http://bel-api.readthedocs.io/en/latest/glossary.html" target="_blank">Terminology</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#profThree" aria-expanded="false" aria-controls="collapseTwo">I am a Developer
+                                <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                            </h4>
+                        </div>
+                        <div id="profThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                            <ul>
+                                <li>
+                                    <a href="http://bel-api.readthedocs.io" target="_blank">BEL.bio API documentation</a>
+                                </li>
+                                <li>
+                                    <a href="http://bel.readthedocs.io" target="_blank">BEL.bio BEL Python module documentation</a>
+                                </li>
+                                <li>
+                                    <a href="http://bel-resources.readthedocs.io" target="_blank">BEL.bio BEL Resoures documentation</a>
+                                </li>
+                                <li>
+                                    <a href="http://openbel.org/language/version_2.0/bel_specification_version_2.0.html" target="_blank">BEL Language 2.0</a>
+                                </li>
+                                <li>
+                                    <a href="https://github.com/belbio">BEL.bio code repositories on Github</a>
+                                </li>
+                                <li>
+                                    <a href="http://jsongraphformat.info/" target="_blank">JSON Graph Format (JGF)</a>
+                                </li>
+                                <li>
+                                    <a href="http://bel-api.readthedocs.io/en/latest/glossary.html" target="_blank">Terminology</a>
                                 </li>
                             </ul>
                         </div>
