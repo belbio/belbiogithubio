@@ -63,7 +63,7 @@ button:hover>i {
 }
 
 .body-html {
-    min-height: calc(100vh - 160px) !important;
+    min-height: calc(100vh - 40px) !important;
 }
 
 .pointer {
@@ -526,13 +526,107 @@ footer p + p {
 
 /*Custom elements*/
 
-.logo {
-  margin-right: 2em;
-  margin-top: 0.5em;
+body{
+    background:  linear-gradient(#ffffff, #f4f4f4);
+    padding: 20px
 }
 
-li.logo {
-  font-size: 2em;
+#body-container ul{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+#body-container li{
+    background-color: #ffffff;
+    
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    width: 170px;
+    height: 170px;
+    font-size: 12px;
+    list-style: none;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0,0.09);
+}
+
+.logo img{
+    width: 65%;
+    height: auto;
+    border-radius: unset;
+    -webkit-border-radius: unset;
+    -moz-border-radius: unset;
+    box-shadow: unset;
+}
+
+#credit-container{
+    display: inline-flex !important;
+    margin-top: 0px !important;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.credit{
+    display: inline-block;
+    width: 260px;
+    margin: 6px;
+    padding: 15px;
+    font-size: 20px;
+    list-style: none;
+    
+}
+
+.credit-name{
+    color: #32BDBE;
+}
+
+.bel-img-container{
+    width: 100%;
+    height: auto;
+}
+
+#bel-img-logo{
+    width: 130px ;
+    margin-top: 10px;
+    margin-left: 10px; 
+    height: auto;
+    z-index: 1;
+}
+
+#bel-img-dna{
+    position: fixed;
+    top: 0px;
+    right: 20px;
+    z-index: 0;
+}
+
+#body-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Roboto-Light;
+    text-align: center;
+    font-size: 18px;
+    color: #484848;
+    float: none;
+}
+
+#body-container h2{
+    margin-top: 40px;
+    font-size: 64px;
+    color: #32BDBE;
+}
+
+#body-container p{
+    margin-top: 10px; 
 }
 
 
