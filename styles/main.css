@@ -543,7 +543,11 @@ body{
     
 }
 
-.logo {
+.logo{
+    margin: 0 auto;
+}
+
+.logo-wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -558,13 +562,22 @@ body{
     box-shadow: 0 3px 10px 0 rgba(0,0,0,0.09);
 }
 
-.logo img{
-    width: 65%;
+.logo-wrapper img{
+    width: 75%;
     height: auto;
     border-radius: unset;
     -webkit-border-radius: unset;
     -moz-border-radius: unset;
     box-shadow: unset;
+}
+
+#bio img{
+    width: 50%;
+    padding-bottom: 10px;
+}
+
+#philip img{
+    width: 70%;
 }
 
 #credit-container{
@@ -576,6 +589,7 @@ body{
 
 .credit{
     display: inline-block;
+    line-height: 25px;
     width: 260px;
     margin: 6px;
     padding: 15px;
