@@ -606,7 +606,7 @@ body{
 #bel-img-container{
     position: relative;
     width: 100%;
-    border-bottom: dashed 1px #484848;
+    border-bottom: dashed 1px #bababa;
     z-index: 1000;
 }
 
